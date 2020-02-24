@@ -1,9 +1,15 @@
 import React from 'react';
 
 const TableHead = (props)=>{
-    const {children}=props;
     return(<table className="tg">
-        {children}
+       <thead>
+              <tr>
+                  <th className="head">Nazwa waluty</th>
+                  <th className="head">Kod waluty</th>
+                  <th className="head">Kurs kupna</th>
+                  <th className="head">Kurs sprzedaży</th>
+              </tr>
+            </thead>
     </table>)
 }
 
