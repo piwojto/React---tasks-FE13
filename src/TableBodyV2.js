@@ -17,12 +17,14 @@ const TableBody = ()=>{
          {tableTD.map((element, key) => {
          const { id, name, buy, sell } = element 
          return (
-            <tr key={id}>
-               <td>{id}</td>
-               <td>{name}</td>
-               <td>{buy}</td>
-               <td>{sell}</td>
-            </tr>
+            <tbody>
+               <tr key={id}>
+                  <td>{id}</td>
+                  <td>{name}</td>
+                  <td>{buy}</td>
+                  <td>{sell}</td>
+               </tr>
+            </tbody>
          )
       })
       }

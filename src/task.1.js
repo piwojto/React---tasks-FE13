@@ -13,6 +13,7 @@ const TempTable = ()=>{
           <th>Savings</th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <td>January</td>
@@ -23,6 +24,7 @@ const TempTable = ()=>{
           <td>$80</td>
         </tr>
       </tbody>
+
       <tfoot>
         <tr>
           <td>Sum</td>
@@ -39,7 +41,8 @@ const TempTable = ()=>{
 // złożyć tabelkę w komponencie Table z componentów TableHead, TableBody
 // wyrenderować komponent Table w apce reacta
 
-
+// nie zrobiłeś komponentu <Table>
+// który przyjmuje komponenty <TableHead> i <TableBody> jako dzieci
 
 
 const Table = ()=>{
