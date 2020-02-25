@@ -1,70 +1,33 @@
 import React from 'react';
 
+const tableTD = [
+    {	id:'dolar australijski',	name:'1 AUD',	buy:'2,6147',	sell:'2,6675',	},
+    {	id:'dolar kanadyjski',	name:'1 CAD',	buy:'2,9291',	sell:'2,9883',	},
+    {	id:'euro',	name:'1 EUR',	buy:'4,2124',	sell:'4,2976',	},
+    {	id:'forint (Węgry)',	name:'100 HUF',	buy:'1,249',	sell:'1,2742',	},
+    {	id:'frank szwajcarski',	name:'1 CHF',	buy:'3,9674',	sell:'4,0476',	},
+    {	id:'funt szterling',	name:'1 GBP',	buy:'5,0615',	sell:'5,1637',	},
+    {	id:'jen (Japonia)',	name:'100 JPY',	buy:'3,5365',	sell:'3,6079',	},
+    {	id:'korona czeska',	name:'1 CZK',	buy:'0,1694',	sell:'0,1728',	},
+    {	id:'korona duńska',	name:'1 DKK',	buy:'0,5638',	sell:'0,5752',	},
+]
+
 const TableBody = (props)=>{
     return(<table className="tg">
-       <tbody>
-                  <tr>
-                  <td>dolar amerykański</td>
-                  <td>1 USD</td>
-                  <td>3,8807</td>
-                  <td>3,9591</td>
-              </tr>
-              <tr>
-                  <td>dolar australijski</td>
-                  <td>1 AUD</td>
-                  <td>2,6147</td>
-                  <td>2,6675</td>
-              </tr>
-              <tr>
-                  <td>dolar kanadyjski</td>
-                  <td>1 CAD</td>
-                  <td>2,9291</td>
-                  <td>2,9883</td>
-              </tr>
-              <tr>
-                  <td>euro</td>
-                  <td>1 EUR</td>
-                  <td>4,2124</td>
-                  <td>4,2976</td>
-              </tr>
-              <tr>
-                  <td>forint (Węgry)</td>
-                  <td>100 HUF</td>
-                  <td>1,2490</td>
-                  <td>1,2742</td>
-              </tr>
-              <tr>
-                  <td>frank szwajcarski</td>
-                  <td>1 CHF</td>
-                  <td>3,9674</td>
-                  <td>4,0476</td>
-              </tr>
-              <tr>
-                  <td>funt szterling</td>
-                  <td>1 GBP</td>
-                  <td>5,0615</td>
-                  <td>5,1637</td>
-              </tr>
-              <tr>
-                  <td>jen (Japonia)</td>
-                  <td>100 JPY</td>
-                  <td>3,5365</td>
-                  <td>3,6079</td>
-              </tr>
-              <tr>
-                  <td>korona czeska</td>
-                  <td>1 CZK</td>
-                  <td>0,1694</td>
-                  <td>0,1728</td>
-              </tr>
-              <tr>
-                  <td>korona duńska</td>
-                  <td>1 DKK</td>
-                  <td>0,5638</td>
-                  <td>0,5752</td>
-              </tr>
+         {tableTD.map((element, key) => {
+         const { id, name, buy, sell } = element 
+         return (
+            <tbody>
+               <tr key={id}>
+                  <td>{id}</td>
+                  <td>{name}</td>
+                  <td>{buy}</td>
+                  <td>{sell}</td>
+               </tr>
             </tbody>
-    </table>)
-}
+         )
+      })
+      }
+          </table>)}   
 
 export default TableBody;

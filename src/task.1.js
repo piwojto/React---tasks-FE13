@@ -25,12 +25,6 @@ const TempTable = ()=>{
         </tr>
       </tbody>
 
-      <tfoot>
-        <tr>
-          <td>Sum</td>
-          <td>$180</td>
-        </tr>
-      </tfoot>
     </table>)
   }
 
@@ -43,6 +37,14 @@ const TempTable = ()=>{
 
 // nie zrobiłeś komponentu <Table>
 // który przyjmuje komponenty <TableHead> i <TableBody> jako dzieci
+
+// THead i TBody ma nie mieć dzieci
+// ma mieć na sztywno wrzucone ifnormacje
+// ale w <Table> ma być prop children
+// który przy wywołaniu <Table> np w App.js pozwoli wyświetlić THead i TBody jako dzieci
+
+// children
+// ale nie w tym miejscu co potrzeba
 
 
 const Table = ()=>{
